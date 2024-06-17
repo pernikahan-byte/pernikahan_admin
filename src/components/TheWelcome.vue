@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Live Location Tracker with Leaflet</h1>
+    <h1>Live Location Tracker Admin</h1>
     <div v-for="(location, index) in locations" :key="index" class="map-container">
       <div :id="'map-' + index" class="map"></div>
     </div>
