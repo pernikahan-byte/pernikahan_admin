@@ -10,7 +10,6 @@
 <script>
 import { onMounted, ref, nextTick } from 'vue';
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import axios from "axios";
 
 export default {
