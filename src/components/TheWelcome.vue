@@ -43,7 +43,7 @@ export default {
           },
         }
       ).then((res) => {
-        locations.value = res.data.results;
+        locations.value = res.data.results || [];
         nextTick(() => {
           locations.value.forEach((location, index) => {
             initMap('map-' + index, parseFloat(location.lat), parseFloat(location.long));
